@@ -1,0 +1,81 @@
+\documentclass[language = czech]{webquiz}
+
+\BreadCrumbs{Matematika https://www.math.muni.cz/\string~xvasicekm | Kombinatorika https://www.math.muni.cz/\string~xvasicekm/kombiIndex.html | title}
+
+\InstitutionURL{https://www.math.muni.cz}
+
+\title{Kombinace}
+
+\usepackage[czech]{babel}
+\usepackage{hyperref}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+	\begin{discussion}[Kombinace]\label{d1} %Prometheus 
+		 $k$-\textbf{členná kombinace} z $n$ prvků je neuspořádaná $k$-tice sestavená z těchto prvků tak, že každý se v ní vyskytuje právě jednou.\\
+		 Pro všechna celá nezáporná čísla $n$, $k$, $k\leq n$, je \[K(k,n) = {n\choose k} = \frac{n!}{k!(n-k)!} \]
+		 Pokud potřebujete podrobnější vysvětlení, můžete se kouknout na \href{https://www.youtube.com/watch?v=GczXt3pg26Y&t=5s}{video o kombinacích}.
+	\end{discussion}
+	
+	\begin{question} \label{o1} %7.1-111/90
+		sešlo se 6 přátel a všichni si navzájem podali ruce. Určete celkový počet těchto podání.
+		\answer[integer]{15}
+		\whenRight Jen tak \qref[dál]{o2}
+		\whenWrong Uvědom si, že  děláme neuspořádané (nezáleží na tom, jestli člověk A podává ruku člověku B, nebo naopak) dvojice z 6 prvků (lidí). Můžeme tedy použít \dref[kombinace]{d1}.
+	\end{question}
+	
+	\begin{question} \label{o2} %7.1-113/90
+		Kolika různými způsoby může být z oddílu 20 skautů vybrána dvojice na konání noční hlídky?
+			\answer[integer]{190}
+		\whenRight Vypadá to, že kombinace začínáš ovládat. Zkus \qref[další otázku]{o3}.
+		\whenWrong Zkus se kouknout, jak se zjišťuje \dref[počet kombinací]{d1}, třeba se budeš moct použít výpočet i v této otázce.
+	\end{question}
+	
+	\begin{question} \label{o3} %7.1-117/90
+		Na čtyřech z 23 škol v okrese má být provedena inspekční kontrola. Kolika různými způsoby lze tyto školy vybrat?
+		\begin{choice}[columns=2]
+			\correct ${23\choose 4}$
+			\feedback Dobrá práce, \qref[další otázka]{o4} už čeká!
+			\incorrect ${4\choose 23}$ 
+			\feedback To by znamenalo, že děláme 24-tice ze čtyř prvků a to by přece nešlo.
+			\incorrect $4!$
+			\feedback Zkus si rozmyslet, jestli použiješ variace, permutace nebo kombinace.
+			\incorrect Jiná odpověď 
+			\feedback Zkus zvážit, jestli pro výpočet nešel použít vzoreček pro \dref[kombinace]{d1}.
+		\end{choice}	
+	\end{question}
+	
+	\begin{question} \label{o4} %7.1-126/91
+		5 dívek a 3 chlapci si chtějí zahrát volejbal. Kolika různými způsoby se mohou rozdělit do dvou družstev po čtyřech tak, aby v každém družstvu alespoň jeden chlapec.
+		\answer[integer]{30}
+		\whenRight Dobrá práce, máš hotovo :)
+		\whenWrong Podmínky lze splnit pouze tak, že v jednom družstvu bude právě jeden chlapec a v druhém právě dva chlapci. Zároveň, pokud vybereme jeden tým, druhý je určen jednoznačně. Proto spočítáme počet možností výběru jednoho týmu. Nejdříve vybereme jednoho ze tří chlapců $K(1,3)$ a poté vybereme 3 dívky, které družstvo doplní $K(3,5)$. Poté použijeme pravidlo součinu.
+	\end{question}
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title> Kombinace </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="generator" content="WebQuiz 5.2 (http://www.maths.usyd.edu.au/u/mathas/WebQuiz/webquiz-online-manual.html)">
+  <meta name="description" content="A LaTeX package for writing online quizzes">
+  <meta name="authors" content="WebQuiz: Andrew Mathas">
+  <meta name="organization" content=", ">
+  <meta name="Copyright" content="WebQuiz: 2004-2019 Andrew Mathas and Donald Taylor, University of Sydney">
+  <meta name="keywords" content="WebQuiz, TeX4ht, make4ht, latex, python, quiz, mathematics">
+  <link href="WebQuiz/css/webquiz-default.css" type="text/css" rel="stylesheet">
+  <link href="kombinace/kombinace.css" type="text/css" rel="stylesheet">
+  <script src="WebQuiz/js/webquiz.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML"></script>
+</head>
+<body>
+  <noscript>
+    <div class="warning">
+      If you are reading this message either your browser does not support
+      JavaScript or because JavaScript is not enabled. You will need to enable
+      JavaScript and then reload this page in order to use this quiz.
+     </div>
+  </noscript><div class="breadcrumbs">
+    <nav>
+        <div class="navleft">
+            <ul>
+              <li><a href="https://www.math.muni.cz/~xvasicekm">Matematika</a></li>
+            <li><a href="https://www.math.muni.cz/~xvasicekm/kombiIndex.html">Kombinatorika</a></li>
+            <li>Kombinace</li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div class="quiz-page">
+    <div id="menu-icon">
+      <span id="sidelabelclosed" class="question-label" onclick="toggle_side_menu();">&#10070;</span>
+      <span id="sidelabelopen" class="question-label" onclick="toggle_side_menu();">&#10006;&nbsp;Otázky
+      </span>
+    </div>
+    <div id="sidemenu" class="side-menu">
+       <ul>
+           <li id="button-1" class="discussion" onClick="gotoQuestion(-1)">Kombinace</li>
+       </ul>
+      <div class="buttons">
+        <br>
+        <div id="button1" class="button blank" content=" " onClick="gotoQuestion(1)">1</div>
+        <div id="button2" class="button blank" content=" " onClick="gotoQuestion(2)">2</div>
+        <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
+        <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
+      </div>
+      <table class="marking-key">
+         <tr><td class="star">&starf;</td><td style="width: 14ex;">Správně na první pokus</td></tr>
+         <tr><td class="tick">&check;</td><td>Správně</td></tr>
+         <tr><td class="cross">&cross;</td><td>Špatně</td></tr>
+      </table>
+      <div class="school">
+        <a href="/"></a><p>
+        <a href="/"></a>
+      </div>
+      <div class="copyright">
+        <a href="http://www.maths.usyd.edu.au/u/mathas/WebQuiz/credits.html">
+           <span class="webquizlogo">WebQuiz</span><span class="TEX">T<span class="E">E</span>X</span>
+        </a>
+        <br>&copy; Copyright<br><span style="overflow: visible;">2004-2019</span>
+      </div>
+    </div>
+    <div class="quiz-questions">
+      <div class="quiz-header">
+       <div class="quiz-title">Kombinace</div><div></div>
+       <span id="question-label" class="question-label">Otázka</span>
+       <span id="question-number" class="question-label">Kombinace</span>
+       <span class="arrows">
+          <a onClick="nextQuestion(-1);" title="Předchozí nezodpovězená otázka">&#x25c4;</a>
+          <span class="question-label">Otázky</span>
+          <a onClick="nextQuestion(1);"  title="Další nezodpovězená otázka">&#x25ba;</a>
+       </span>
+      </div>
+      <div id="question-1" class="question" style="display:none;">
+        <!--l. 16--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>-členná
+kombinace z <!--l. 16--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math> prvků je
+neuspořádaná <!--l. 16--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>-tice
+sestavená z těchto prvků tak, že každý se v ní vyskytuje právě
+jednou.<br 
+class="newline" />Pro všechna celá nezáporná čísla
+<!--l. 17--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>,
+<!--l. 17--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>,
+<!--l. 17--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi> <mo 
+class="MathClass-rel">≤</mo> <mi 
+>n</mi></math>, je
+<table class="equation-star"><tr><td>
+<!--l. 17--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                      <mi 
+>K</mi><mo 
+class="MathClass-open" stretchy="false">(</mo><mi 
+>k</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>n</mi><mo 
+class="MathClass-close" stretchy="false">)</mo> <mo 
+class="MathClass-rel">=</mo><mfenced separators="" 
+open="(" close=")"><mfrac linethickness="0"><mrow> <mi 
+>n</mi></mrow>
+ <mrow><mi 
+>k</mi></mrow></mfrac></mfenced> <mo 
+class="MathClass-rel">=</mo>      <mfrac><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow> 
+<mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-punc">!</mo><mo 
+class="MathClass-open" stretchy="false">(</mo><mi 
+>n</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>k</mi><mo 
+class="MathClass-close" stretchy="false">)</mo><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>
+</math></td></tr></table>
+<p>Pokud potřebujete podrobnější vysvětlení, můžete se kouknout na <a 
+href="https://www.youtube.com/watch?v=GczXt3pg26Y&t=5s" >video
+o kombinacích</a>. </p>
+      </div>
+<div id="question1" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ sešlo se 6 přátel a všichni si navzájem podali ruce. Určete celkový počet
+těchto podání.  
+
+      <form id="Q1Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(1);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(1);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q1true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Jen tak  
+<span class="button blank" onClick="gotoQuestion(2);">dál</span></div>
+        </div>
+        <div id="q1false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Uvědom si, že děláme neuspořádané
+(nezáleží na tom, jestli člověk A podává ruku člověku B, nebo
+naopak) dvojice z 6 prvků (lidí). Můžeme tedy použít  
+<span class="button blank" onClick="gotoQuestion(-1);">kombinace</span>.</div>
+        </div></div>
+      </div>
+<div id="question2" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Kolika různými způsoby může být z oddílu 20 skautů vybrána dvojice
+na konání noční hlídky?  
+
+      <form id="Q2Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(2);" size="8"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(2);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q2true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Vypadá to, že kombinace začínáš
+ovládat. Zkus  
+<span class="button blank" onClick="gotoQuestion(3);">další otázku</span>.</div>
+        </div>
+        <div id="q2false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Zkus se kouknout, jak se zjišt’uje  
+<span class="button blank" onClick="gotoQuestion(-1);">počet
+kombinací</span>, třeba se budeš moct použít výpočet i v této otázce.</div>
+        </div></div>
+      </div>
+<div id="question3" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+                                                                  
+
+                                                                  
+
+ 
+ Na čtyřech z 23 škol v okrese má být provedena inspekční
+kontrola. Kolika různými způsoby lze tyto školy vybrat?  
+
+      <form id="Q3Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><!--l. 38--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mfenced separators="" 
+open="(" close=")"><mfrac linethickness="0"><mrow><mn>2</mn><mn>3</mn></mrow>
+ <mrow><mn>4</mn></mrow></mfrac></mfenced> </math></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><!--l. 40--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mfenced separators="" 
+open="(" close=")"><mfrac linethickness="0"><mrow> <mn>4</mn></mrow>
+<mrow><mn>2</mn><mn>3</mn></mrow></mfrac></mfenced></math></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><!--l. 42--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>4</mn><mo 
+class="MathClass-punc">!</mo></math></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices">Jiná odpověd’</div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(3);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q3feedback1" class="feedback">
+              <em>Volba (a) je <span class="dazzle">Dobře!</span></em>
+              <div>Dobrá práce,  
+<span class="button blank" onClick="gotoQuestion(4);">další
+otázka</span> už čeká! <a 
+ id="x1-7r2"></a></div>
+        </div>
+
+        <div id="q3feedback2" class="feedback">
+              <em>Volba (b) je <span class="dazzle">Špatně!</span></em>
+              <div>To by znamenalo, že děláme 24-tice ze čtyř prvků a to by přece nešlo.
+<a 
+ id="x1-8r3"></a></div>
+        </div>
+
+        <div id="q3feedback3" class="feedback">
+              <em>Volba (c) je <span class="dazzle">Špatně!</span></em>
+              <div>Zkus
+si rozmyslet, jestli použiješ variace, permutace nebo kombinace. <a 
+ id="x1-9r4"></a></div>
+        </div>
+
+        <div id="q3feedback4" class="feedback">
+              <em>Volba (d) je <span class="dazzle">Špatně!</span></em>
+              <div>Zkus zvážit, jestli pro výpočet nešel použít vzoreček pro  
+<span class="button blank" onClick="gotoQuestion(-1);">kombinace</span>.</div>
+        </div></div>
+      </div>
+<div id="question4" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ 5 dívek a 3 chlapci si chtějí zahrát volejbal. Kolika různými způsoby se
+mohou rozdělit do dvou družstev po čtyřech tak, aby v každém družstvu
+alespoň jeden chlapec.  
+
+      <form id="Q4Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(4);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(4);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q4true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Dobrá práce, máš hotovo :)</div>
+        </div>
+        <div id="q4false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Podmínky lze
+splnit pouze tak, že v jednom družstvu bude právě jeden chlapec a v
+druhém právě dva chlapci. Zároveň, pokud vybereme jeden tým,
+druhý je určen jednoznačně. Proto spočítáme počet možností
+výběru jednoho týmu. Nejdříve vybereme jednoho ze tří chlapců
+<!--l. 53--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>K</mi><mo 
+class="MathClass-open" stretchy="false">(</mo><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>3</mn><mo 
+class="MathClass-close" stretchy="false">)</mo></math>
+a poté vybereme 3 dívky, které družstvo doplní
+<!--l. 53--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>K</mi><mo 
+class="MathClass-open" stretchy="false">(</mo><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>5</mn><mo 
+class="MathClass-close" stretchy="false">)</mo></math>.
+Poté použijeme pravidlo součinu.</div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+  <div style="display: none;">
+    <script src="quizindex.js"></script>
+    <script>WebQuizInit(4, 1, 'kombinace');</script>
+  </div>
+</body>
+</html>

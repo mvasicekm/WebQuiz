@@ -1,0 +1,685 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title> Základní kombinatorická pravidla </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="generator" content="WebQuiz 5.2 (http://www.maths.usyd.edu.au/u/mathas/WebQuiz/webquiz-online-manual.html)">
+  <meta name="description" content="A LaTeX package for writing online quizzes">
+  <meta name="authors" content="WebQuiz: Andrew Mathas">
+  <meta name="organization" content=", ">
+  <meta name="Copyright" content="WebQuiz: 2004-2019 Andrew Mathas and Donald Taylor, University of Sydney">
+  <meta name="keywords" content="WebQuiz, TeX4ht, make4ht, latex, python, quiz, mathematics">
+  <link href="WebQuiz/css/webquiz-default.css" type="text/css" rel="stylesheet">
+  <link href="zaklPrav/zaklPrav.css" type="text/css" rel="stylesheet">
+  <script src="WebQuiz/js/webquiz.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML"></script>
+</head>
+<body>
+  <noscript>
+    <div class="warning">
+      If you are reading this message either your browser does not support
+      JavaScript or because JavaScript is not enabled. You will need to enable
+      JavaScript and then reload this page in order to use this quiz.
+     </div>
+  </noscript><div class="breadcrumbs">
+    <nav>
+        <div class="navleft">
+            <ul>
+              <li><a href="https://www.math.muni.cz/~xvasicekm">Matematika</a></li>
+            <li><a href="https://www.math.muni.cz/~xvasicekm/kombiIndex.html">Kombinatorika</a></li>
+            <li>Základní kombinatorická pravidla</li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+
+  <div class="quiz-page">
+    <div id="menu-icon">
+      <span id="sidelabelclosed" class="question-label" onclick="toggle_side_menu();">&#10070;</span>
+      <span id="sidelabelopen" class="question-label" onclick="toggle_side_menu();">&#10006;&nbsp;Otázky
+      </span>
+    </div>
+    <div id="sidemenu" class="side-menu">
+       <ul>
+           <li id="button-1" class="discussion" onClick="gotoQuestion(-1)">Pravidlo součtu</li>
+           <li id="button-2" class="discussion" onClick="gotoQuestion(-2)">Pravidlo součinu</li>
+       </ul>
+      <div class="buttons">
+        <br>
+        <div id="button1" class="button blank" content=" " onClick="gotoQuestion(1)">1</div>
+        <div id="button2" class="button blank" content=" " onClick="gotoQuestion(2)">2</div>
+        <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
+        <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
+        <div id="button5" class="button blank" content=" " onClick="gotoQuestion(5)">5</div>
+        <div id="button6" class="button blank" content=" " onClick="gotoQuestion(6)">6</div>
+        <div id="button7" class="button blank" content=" " onClick="gotoQuestion(7)">7</div>
+        <div id="button8" class="button blank" content=" " onClick="gotoQuestion(8)">8</div>
+      </div>
+      <table class="marking-key">
+         <tr><td class="star">&starf;</td><td style="width: 14ex;">Správně na první pokus</td></tr>
+         <tr><td class="tick">&check;</td><td>Správně</td></tr>
+         <tr><td class="cross">&cross;</td><td>Špatně</td></tr>
+      </table>
+      <div class="school">
+        <a href="/"></a><p>
+        <a href="/"></a>
+      </div>
+      <div class="copyright">
+        <a href="http://www.maths.usyd.edu.au/u/mathas/WebQuiz/credits.html">
+           <span class="webquizlogo">WebQuiz</span><span class="TEX">T<span class="E">E</span>X</span>
+        </a>
+        <br>&copy; Copyright<br><span style="overflow: visible;">2004-2019</span>
+      </div>
+    </div>
+    <div class="quiz-questions">
+      <div class="quiz-header">
+       <div class="quiz-title">Základní kombinatorická pravidla</div><div></div>
+       <span id="question-label" class="question-label">Otázka</span>
+       <span id="question-number" class="question-label">Pravidlo součtu</span>
+       <span class="arrows">
+          <a onClick="nextQuestion(-1);" title="Předchozí nezodpovězená otázka">&#x25c4;</a>
+          <span class="question-label">Otázky</span>
+          <a onClick="nextQuestion(1);"  title="Další nezodpovězená otázka">&#x25ba;</a>
+       </span>
+      </div>
+      <div id="question-1" class="question" style="display:none;">
+        Jsou-li
+<!--l. 14--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> ⁡<!--FUNCTION APPLICATION--></mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math> konečné množiny,
+které mají po řadě <!--l. 14--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+class="MathClass-op">…</mi><mo> ⁡<!--FUNCTION APPLICATION--></mo><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math>
+prvků a jsou-li každé dvě disjunktní, pak počet prvků množiny
+<!--l. 14--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">∩</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">∩</mo> <msub><mrow 
+><mi 
+>A</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math> je
+roven <!--l. 14--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>p</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></math>.<br 
+class="newline" />Pokud potřebujete podrobnější vysvětlení, najdete ho <a 
+href="https://www.youtube.com/watch?v=kVWRTzAdc-U" >zde</a>.
+      </div>
+<div id="question-2" class="question" style="display:none;">
+        Počet všech uspořádaných
+<!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>-tic, jejichž první
+člen lze vybrat <!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+způsoby, druhý člen po výběru prvního členu
+<!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math> způsoby
+atd. až <!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>-tý
+člen po výběru všech předcházejících členů
+<!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></math> způsoby,
+je roven <!--l. 18--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo> <msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">⋅</mo><mo 
+class="MathClass-rel">⋯</mo> <mo 
+class="MathClass-bin">⋅</mo> <msub><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>k</mi></mrow></msub 
+></math>.<br 
+class="newline" />Pokud potřebujete podrobnější vysvětlení, najdete ho <a 
+href="https://www.youtube.com/watch?v=JLheSkk4yWQ" >zde</a>.
+      </div>
+<div id="question1" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Ze 120 studentů v ročníku ovládá 55 studentů angličtinu, 34 němčinu a
+26 oba jazyky. Kolik studentů neovládá žádný z obou jazyků?  
+
+      <form id="Q1Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(1);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(1);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q1true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Jen tak
+ 
+<span class="button blank" onClick="gotoQuestion(2);">dál</span></div>
+        </div>
+        <div id="q1false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Zkus si nakreslit <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy diagramy</a>.</div>
+        </div></div>
+      </div>
+<div id="question2" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ V autoopravně odstranili za jeden den na 46 automobilech 36 poruch motorů a
+24 poruch brzd. Přitom na každém z opravovaných aut nebylo více
+oprav stejného druhu. Kolik aut mělo pouze poruchu motoru a kolik jich
+mělo jen poruchu na brzdách?  
+
+      <form id="Q2Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices">Poruch jen motorů: 10, jen brzd: 22</div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices">Poruch jen motorů:
+14, jen brzd: 24</div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices">Poruch jen motorů: 22, jen
+brzd: 10</div></td>
+   </tr><!-- part=2, cols=3, # answers = 6 -->
+
+<tr><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices">Poruch jen motorů:
+26, jen brzd: 14</div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(e)</td><td><div class="question-choices">Poruch jen motorů: 22, jen
+brzd: 24</div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(f)</td><td><div class="question-choices">Poruch jen motorů: 36, jen brzd: 10</div></td>
+   </tr><!-- part=5, cols=3, # answers = 6 -->
+</table>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(2);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q2feedback1" class="feedback">
+              <em>Volba (a) je <span class="dazzle">Špatně!</span></em>
+              <div>Dej
+pozor na prohození poruch motorů za poruchy brzd. <a 
+ id="x1-7r2"></a></div>
+        </div>
+
+        <div id="q2feedback2" class="feedback">
+              <em>Volba (b) je <span class="dazzle">Špatně!</span></em>
+              <div>Zkus si nakreslit <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy diagramy</a> a uvědomit si, kolik
+aut mělo zároveň poruchu motoru i brzd. <a 
+ id="x1-8r3"></a></div>
+        </div>
+
+        <div id="q2feedback3" class="feedback">
+              <em>Volba (c) je <span class="dazzle">Dobře!</span></em>
+              <div>Dobrá práce  
+<span class="button blank" onClick="gotoQuestion(3);">další otázka</span> už čeká <a 
+ id="x1-9r4"></a></div>
+        </div>
+
+        <div id="q2feedback4" class="feedback">
+              <em>Volba (d) je <span class="dazzle">Špatně!</span></em>
+              <div>kus si nakreslit <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy diagramy</a> a uvědomit si, kolik
+aut mělo zároveň poruchu motoru i brzd. <a 
+ id="x1-10r5"></a></div>
+        </div>
+
+        <div id="q2feedback5" class="feedback">
+              <em>Volba (e) je <span class="dazzle">Špatně!</span></em>
+              <div>Potom by žádné auto nemělo obě poruchy zároveň, zkus
+si nakreslit <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy diagramy</a> a uvědomit si, kolik aut mělo zároveň
+                                                                  
+
+                                                                  
+poruchu motoru i brzd. <a 
+ id="x1-11r6"></a></div>
+        </div>
+
+        <div id="q2feedback6" class="feedback">
+              <em>Volba (f) je <span class="dazzle">Špatně!</span></em>
+              <div>Potom by
+žádné auto nemělo obě poruchy zároveň, zkus si nakreslit <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy
+diagramy</a> a uvědomit si, kolik aut mělo zároveň poruchu motoru i brzd.</div>
+        </div></div>
+      </div>
+<div id="question3" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Je známo, že jeden volitelný předmět navštěvuje 30 studentů a
+druhý 24 studentů. Co z těchto údajů vyplývá pro celkový počet
+studentů navštěvujících oba předměty, jestliže se konají v různé
+době s účastí týchž 15 studentů?  
+
+      <form id="Q3Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(3);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(3);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q3true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Jen tak  
+<span class="button blank" onClick="gotoQuestion(4);">dál</span>, možná
+se ti ale bude hodit podívat se na  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidlo součinu</span>.</div>
+        </div>
+        <div id="q3false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Označme:
+<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi></math>
+množinu všech studentů navštěvující 1. předmět
+(<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mn>3</mn><mn>0</mn></math>),
+<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>B</mi></math>
+množinu studentů navštěvujících 2.předmět
+(<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-rel">|</mo><mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mn>4</mn></math>).
+Protože <!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>A</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>B</mi><mo 
+class="MathClass-rel">≠</mo><mi 
+>∅</mi></math>
+(<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mn>5</mn></math>), pak podle
+<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-rel">|</mo><mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo><mo 
+class="MathClass-bin">−</mo><mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi> <mo 
+class="MathClass-bin">∩</mo> <mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo></math>. A tedy všech
+studentů (<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-rel">|</mo><mi 
+>A</mi> <mo 
+class="MathClass-bin">∪</mo> <mi 
+>B</mi><mo 
+class="MathClass-rel">|</mo></math>)
+je<!--l. 50--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+class="MathClass-op">…</mi><mo> ⁡<!--FUNCTION APPLICATION--></mo><mspace width="0.17em" class="thinspace"/></math>
+Zkus další pokus :).<br 
+class="newline" />Pro znázornění můžeš použít <a 
+href="https://www.youtube.com/watch?v=5c_m2EA0sN8" >vennovy diagramy</a>.</div>
+        </div></div>
+      </div>
+<div id="question4" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Určete, kolik je všech dvojciferných přirozených čísel.<br 
+class="newline" />Nápověda: použijte  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidlo součinu</span>  
+
+      <form id="Q4Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(4);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(4);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q4true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Vypadá to, že pravidlo součinu
+začínáš ovládat. Zkus  
+<span class="button blank" onClick="gotoQuestion(5);">další otázku</span>.</div>
+        </div>
+        <div id="q4false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Na vytváření dvojciferných
+čísel se můžeme podívat tak, že máme dvě volné pozice ( _ _ ).
+Máme deset cifer {0,1,2,…,8,9}. Na první pozici můžeme dosadit 9 z
+nich, protože dvojciferné číslo nesmí začínat nulou. Na druhou
+pozici můžeme dosadit libovolnou cifru. Podle pravidla součinu, potom
+<!--l. 57--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>9</mn> <mo 
+class="MathClass-bin">⋅</mo> <mn>1</mn><mn>0</mn></math> je
+počet všech možností.</div>
+        </div></div>
+      </div>
+<div id="question5" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Do studentské samosprávy je třeba zvolit jednoho zástupce z každé ze dvou
+tříd, v nichž je 28 a 30 studentů. Kolika různými způsoby lze tuto
+volbu provést?  
+
+      <form id="Q5Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(5);" size="8"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(5);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q5true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Dobrá práce,  
+<span class="button blank" onClick="gotoQuestion(6);">další otázka</span> se na tebe těší.</div>
+        </div>
+        <div id="q5false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Uvědom si, kolik studentů můžeš zvolit z první třídy a kolik
+studentů ze třídy druhé. Potom zkus aplikovat  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidlo součinu</span>.</div>
+        </div></div>
+      </div>
+<div id="question6" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+                                                                  
+
+                                                                  
+
+ 
+ Z 12 různých košil, 9 různých kravat a 11 různých párů ponožek se má
+vybrat jedno oblečení. Kolika různými způsoby se může tento výběr
+provést?  
+
+      <form id="Q6Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(6);" size="9"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(6);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q6true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Pravidlo součinu už očividně ovládáš.  
+<span class="button blank" onClick="gotoQuestion(7);">Dál</span>.</div>
+        </div>
+        <div id="q6false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Uvědom si,
+kolika způsoby můžeš zvolit košili, kolika kravatu a kolika ponožky. Potom
+zkus aplikovat  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidlo součinu</span>.</div>
+        </div></div>
+      </div>
+<div id="question7" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Máme k dispozici 12 červených, 15 bílých a 8 žlutých růží, 25
+červených, 14 bílých a 18 dvoubarevných karafiátů. Kolik různých kytic
+obsahujících právě tři různé růže nebo právě tři různé
+karafiáty lze z nich udělat?  
+
+      <form id="Q7Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(7);" size="9"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(7);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q7true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Dobrá práce, už máš skoro hotovo.
+ 
+<span class="button blank" onClick="gotoQuestion(8);">poslední otázka</span>.</div>
+        </div>
+        <div id="q7false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Je potřeba si uvědomit, že pomocí  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidla součinu</span>
+zjistíme počet možných vytvořených kytic růží a kolik kytic
+karafiátů. Na tyto počty možností poté aplikujeme  
+<span class="button blank" onClick="gotoQuestion(-1);">pravidlo součtu</span>.</div>
+        </div></div>
+      </div>
+<div id="question8" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Z místa <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math>
+do místa <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+vedou cesty <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>c</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>d</mi></math>
+a z místa <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+do místa <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></math>
+vedou cesty <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>e</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>f</mi></math>.<br 
+class="newline" /><object type="image/svg+xml" data="zaklPrav/701-21.svg" name="picture 701-21" class="graphics"></object><!--tex4ht:graphics width="144" height="144" --><br class="newline" />Určete počty všech cestovních tras, tj. způsobů, jimiž se lze dostat po trase z místa
+<!--l. 84--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+></math> do místa
+<!--l. 84--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+></math> a zpět tak, že přitom
+projde místem <!--l. 84--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>M</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+></math>
+právě dvakrát za podmínky, že právě jedna z šesti cest je použita
+dvakrát.  
+
+      <form id="Q8Form" onSubmit="return false;">
+        Odpověď:&nbsp;<input type="text"  onChange="checkAnswer(8);" size="7"/>
+        <p>
+          <input type="button" value="Zkontrolovat odpověď" name="answer" class="input-button" onClick="checkAnswer(8);"/>
+          <input type="button" value="Další nezodpovězená otázka" class="input-button" title="Další nezodpovězená otázka" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q8true" class="feedback"><em class="dazzle">Dobře!</em> <em></em>
+           <div>Paráda! Už máš hotovo :).</div>
+        </div>
+        <div id="q8false" class="feedback"><em class="dazzle">Špatně!</em> <em>Zkus to znovu</em>
+           <div>Musíš opět použít  
+<span class="button blank" onClick="gotoQuestion(-2);">pravidla
+součinu</span> i  
+<span class="button blank" onClick="gotoQuestion(-1);">pravidlo součtu</span>.</div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+  <div style="display: none;">
+    <script src="quizindex.js"></script>
+    <script>WebQuizInit(8, 2, 'zaklPrav');</script>
+  </div>
+</body>
+</html>

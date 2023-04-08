@@ -1,0 +1,132 @@
+\documentclass[language = czech]{webquiz}
+
+\BreadCrumbs{Matematika https://www.math.muni.cz/\string~xvasicekm | Kombinatorika https://www.math.muni.cz/\string~xvasicekm/kombiIndex.html | title}
+
+\InstitutionURL{https://www.math.muni.cz}
+
+\title{Variace a Permutace}
+
+\usepackage[czech]{babel}
+\usepackage{hyperref}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+
+	\begin{discussion}[Variace][Variace]\label{d1} %Prometheus 
+		$k$-\textbf{členná variace} z $n$ prvků je uspořádaná $k$-tice sestavená z těchto prvků tak, že každý se v ní vyskytuje nejvýše jednou.\\
+		Počet $V(k,n)$ všech $k$-členných variací z $n$ prvků je \[V(k,n)=n(n-1)(n-2)\dots(n-k+1) = \dots = \frac{n!}{(n-k)!}.\]%poslední úprava je z Poláka.
+	\end{discussion}
+	
+	\begin{discussion}[Permutace][Permutace]\label{d2} %Prometheus
+		 \textbf{Permutace} z $n$ prvků je každá $n$-členná variace z těchto prvků tak, že každý se v ní vyskytuje právě jednou.\\
+		 Počet $P(n)$ všech permutací z $n$ prvků je \[P(n)=n!.\]
+	\end{discussion}
+	
+	\begin{question} \label{o1} %7.1-53/83
+		Před odjezdem na prázdniny si 8 kamarádů slíbilo, že si navzájem pošlou pohlednice z cest. Kolik pohlednic si celkem poslali, jestliže všichni splnili svůj slib? 	
+		\answer[integer]{56}
+		\whenRight Přesně tak :)  \qref[Další otázka]{o2}
+		\whenWrong Pojďme se na to podívat:\\ Pokud vybereme libovolnou dvojici kamarádů, tak si vzájemně poslali pohlednici. V řeči matematiky můžeme říct, že tvoříme uspořádané dvojice z 8 prvků (kamarádů). Tedy můžeme použít \dref[variace]{d2} $V(2,8)$.
+	\end{question}
+	
+	\begin{question} \label{o2} %7.1-59/83
+		Určete počet všech přirozených čísel, která jsou (v dekadickém zápisu):
+		\begin{enumerate}
+			\item dvojciferná
+			\item trojciferná
+			\item čtyřciferná
+		\end{enumerate} a mají vesměs různé číslice. 
+		\begin{choice}[columns=2]
+			\incorrect 1. 90, 2. 720, 3. 5040.
+				\feedback Nezapomeň, že se nepočítají dvojice, trojice nebo čtveřice, které začínají nulou (např.: 0123 = 123, tedy není čtyřciferné číslo).
+			\incorrect 1. 81, 2. 729, 3. 6561.
+				\feedback Čísla mají obsahovat různé číslice, tedy třeba číslo 11 nebo 2215 nevyhovuje zadání.
+			\incorrect 1. 72, 2. 504, 3. 3024. 
+				\feedback Zkus si rozmyslet, z jakých číslic tvoříš čísla a kolik mají cifer. Potom můžeš použít \dref[variace]{d2}. Nebo je možné použít \href{https://www.youtube.com/watch?v=JLheSkk4yWQ}{pravidlo součinu}
+			\correct 1. 81, 2. 648, 3. 4536.
+				\feedback Dobrá práce \qref[další otázka]{o3} už čeká :)
+		\end{choice}	
+	\end{question}
+		
+	\begin{question} \label{o3} %7.1-64/83
+		Z kolika prvků lze vytvořit právě 420 různých dvojčlenných variací
+		\begin{choice}[columns=2]
+			\incorrect $21$ nebo $-20$ prvků
+			\feedback $-20$ prvků úloze nevyhovuje.
+			\correct $21$
+			\feedback Správně! Můžeš pokračovat na \qref[další otázku]{o4}.
+			\incorrect $42$
+			\feedback Zkus si sestavit rovnici, když víš, že $V(2,n)=420$. Pokud si ani tak nevíš rady, zkus se podívat na \dref[variace]{d1}.
+			\incorrect Žádná z uvedených možností
+			\feedback Bohužel, řešení ve výběru je. Zkoušel(a) sis sestavit rovnici?
+		\end{choice}
+	\end{question}
+	
+	\begin{question} \label{o4} %7.1-65a)/83
+		Řešte v oboru $\mathbb{N}$ rovnici s neznámou $n$. \[V(3,n)=12\cdot V(2,n).\]
+		\answer[integer]{14}
+		\whenRight Správně, \qref[další otázka]{o5}.
+		\whenWrong Zkus si rovnici rozepsat podle \dref[variací]{d1}
+	\end{question}
+	
+	\begin{question} \label{o5} %7.1-67/84
+		Kolika různými způsoby lze rozsadit čtyři osoby na čtyři různá místa?
+		\begin{choice}[multiple]
+			\incorrect Pravidlem součtu: 4 možnosti na první místo,  3 možnosti na druhé místo, \dots, 1 možnost na poslední čtvrté místo. Tedy $4+3+2+1 = \mathbf{\underline{10}}$
+			\feedback Bohužel, v tomto případě nemůžeme použít pravidlo součinu.
+			\correct Pravidlem součinu: 4 možnosti na první místo,  3 možnosti na druhé místo, \dots, 1 možnost na poslední čtvrté místo. Tedy $4\cdot 3\cdot 2\cdot 1 = \mathbf{\underline{24}}$
+			\feedback Správně! Můžeš pokračovat na \qref[další otázku]{o6}.
+			\incorrect Pravidlem součinu: 4 možnosti na první místo,  4 možnosti na druhé místo, \dots, 4 možnosti na čtvrté místo. Tedy $4\cdot 4\cdot 4\cdot 4 = \mathbf{\underline{4^4}}$
+			\feedback Uvědom si, že pokud jednu osobu posadíš na jedno místo, už ho nemůžeš posadit na místo další.
+			\correct $P(4)= \mathbf{\underline{4!}}$
+			\feedback Správně! Můžeš pokračovat na \qref[další otázku]{o6}.
+		\end{choice}
+	\end{question}
+	 
+	 \begin{question} \label{o6} %7.1-74a)/85
+	 	Kolik existuje všech možných způsobů seřazení osmi různých knih v knihovně vedle sebe?
+	 	\answer[integer]{40320}
+	 	\whenRight Paráda, permutacím přicházíš na kloub. \qref[Dál]{o7}.
+	 	\whenWrong Můžeš využít pravidlo součinu nebo \dref[permutace]{d2}.
+	 \end{question}
+	 
+	 \begin{question} \label{o7} %7.1-74c)/85 upraveno, aby dávalo smysl
+	 	Kolik bude existovat způsobů seřazení osmi knih, jestliže u 3 svazků, které mají být vedle sebe, nezáleží na pořadí?\\Výsledek zapište formátem $P(a).P(b), kde \, a \geq b$.
+	 	\answer{P(6).P(3)}
+	 	\whenRight Dobrá práce, už máš skoro hotovo. \qref[poslední otázka]{o8}.
+	 	\whenWrong U tohoto příkladu je důležité si uvědomit, že nejdřív uděláme \dref[permutaci]{d2} knih, které mají být vedle sebe a poté děláme \dref[permutaci]{d2} všech knih, ale pozor, ty knihy, které mají být u sebe už promíchat nesmíme. Nakonec použij jedno ze základních kombinatorických pravidel. 
+	 \end{question}
+	
+	 \begin{question} \label{o8} %7.1-85b)/86
+	 	Řešte v oboru $\mathbb{N}$ rovnici s neznámou $n$. \[P(n+1)=30\cdot P(n-1).\]
+	 	\answer[integer]{5}
+	 	\whenRight Paráda! Už máš hotovo :).
+	 	\whenWrong Zkus si rovnici rozepsat pomocí vzorečku pro \dref[permutace]{d2} a už budeš mít hotovo :).
+	 \end{question}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
