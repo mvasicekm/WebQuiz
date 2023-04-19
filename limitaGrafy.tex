@@ -1,0 +1,71 @@
+\documentclass[language = czech,randomorder]{webquiz}
+
+\BreadCrumbs{Matematika https://www.math.muni.cz/\string~xvasicekm/
+	| Matematicka analyza https://www.math.muni.cz/\string~xvasicekm/analIndex.html
+	| title}
+
+\InstitutionURL{https://www.math.muni.cz}
+
+\title{Limita funkce - grafy}
+
+\usepackage[dvipdfmx]{graphicx}
+\DeclareGraphicsExtensions{.png}
+\begin{document}
+	\begin{question}
+		Má funkce $f(x)=\frac{2}{x-1}$ v bodě $x=1$ limitu? Vypočtěte a zkontrolujte si výsledek podle grafu. 
+		\begin{center}
+			\includegraphics[scale=1]{limitaGrafy/grafLomena.png}
+		\end{center}
+		\begin{choice}
+			\incorrect Ano, má.
+			\correct Ne, nemá.
+		\end{choice}
+	\end{question}
+
+	\begin{question}
+		Je dána funkce $f(x)=1+\sqrt{x}$, její graf můžete vidět na obrázku. Z grafu odhadněte, která tvrzení jsou pravdivá.
+		\begin{center}
+			\includegraphics[scale=1.5]{limitaGrafy/1+sX.png}
+		\end{center}
+		\begin{choice}[multiple]
+			\correct O limitě funkce $f$ v bodě $0$ nemá smysl hovořit, protože definiční obor je $[0,\infty)$
+			\incorrect $\lim_{x\to 0-}(1+\sqrt{x})=1$
+			\incorrect $\lim_{x\to 0-}(f(x))=1$
+			\correct $\lim_{x\to 0+}(1+\sqrt{x})=1$
+			\incorrect $\lim_{x\to 0-}(f(x))=0$
+		\end{choice}
+	\end{question}
+
+	\begin{question}
+		Určete body, ve kterých není definována funkce $g: y=\frac{1}{x^2-4}$, a vypočtěte jednostranné limity v těchto bodech a limity v nevlastních bodech.\\Z nabídky označte všechny správné odpovědi.
+		\begin{choice}[multiple, columns=2]
+			\incorrect Funkce $g$ není definována pro $x\in \{-4,4\}$%
+			\correct Funkce $g$ není definována pro $x\in \{-2,2\}$%
+			\incorrect Funkce $g$ není definována pro $x\in \{-4,-2,0,2,4\}$%
+			\correct $\lim_{x\to -2-}\frac{1}{x^2-4}=\infty$%
+			\correct $\lim_{x\to -\infty}\frac{1}{x^2-4}=0$%
+			\incorrect $\lim_{x\to -2-}\frac{1}{x^2-4}=1$%
+			\incorrect $\lim_{x\to -\infty}\frac{1}{x^2-4}=-\infty$%
+			\incorrect $\lim_{x\to 0-}\frac{1}{x^2-4}=0$%
+			\correct $\lim_{x\to 2-}\frac{1}{x^2-4}=-\infty$%
+			\incorrect $\lim_{x\to 4+}\frac{1}{x^2-4}=\infty$%
+			\incorrect $\lim_{x\to 2+}\frac{1}{x^2-4}=-\infty$%
+			\correct $\lim_{x\to -2+}\frac{1}{x^2-4}=-\infty$%
+		\end{choice}
+	\end{question}
+
+	\begin{question}
+		Je dána funkce $f(x)=1+\sqrt{|x|}$, její graf můžete vidět na obrázku. Z grafu odhadněte, která tvrzení jsou pravdivá.
+		\begin{center}
+			\includegraphics[scale=1.5]{limitaGrafy/absSX.png}
+		\end{center}
+		\begin{choice}[multiple]
+			\correct $\lim_{x\to 0}(1+\sqrt{|x|})=1$
+			\incorrect $\lim_{x\to \infty}(f(x))=0$
+			\correct $\lim_{x\to 0-}(f(x))=1$
+			\correct $\lim_{x\to 0+}(1+\sqrt{|x|})=1$
+			\incorrect $\lim_{x\to 0-}(f(x))=0$
+		\end{choice}
+	\end{question}
+
+\end{document}
